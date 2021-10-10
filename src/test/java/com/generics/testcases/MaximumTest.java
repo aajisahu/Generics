@@ -1,20 +1,20 @@
 package com.generics.testcases;
+import static org.junit.Assert.assertEquals;
 
 import org.junit.Assert;
 import org.junit.Test;
 
-
 public class MaximumTest
 {
     @Test
-    public void intMax1() {
-        int actualValue = Maximum.getmaximum(12,14,15);
-        Assert.assertEquals(15,actualValue);
+    public void floatMax1() {
+        float actualValue = Maximum.getmaximum(12f,14f,15f);
+        Assert.assertEquals(15,actualValue ,0);
     }
 
     @Test
-    public void intMax2() {
-        int actualValue = Maximum.getmaximum(1000,545,746);
-        Assert.assertEquals(1000,actualValue);
+    public void floatMax2() {
+        float actualValue = Maximum.getmaximum(1000f,545f,746f);
+        Assert.assertEquals(1000,actualValue, 0);
     }
 }
